@@ -1,0 +1,1 @@
+export {default as fetchMovies} from './fetch_movies'
