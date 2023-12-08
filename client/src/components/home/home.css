@@ -2,7 +2,7 @@
     text-align: start;
 }
 #home > *{
-    padding-top: 30px;
+    padding-top: 20px;
 }
 .landing{
     width: 100%;
@@ -82,8 +82,7 @@
 .small-landing{
     height: 600px;
     margin: auto;
-    margin-top: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 @media screen and (max-width: 600px) {

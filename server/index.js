@@ -10,7 +10,8 @@ dotenv.config()
 const port = process.env.PORT || 8000
 app.use(cors({
     credentials: true,
-    origin: "http://localhost:3000"
+    // origin: "http://localhost:3000",
+    origin: "https://movie-hub-mi.vercel.app"
 }))
 app.use(express.json())
 app.use('/movies', movies_router)

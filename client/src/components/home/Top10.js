@@ -9,7 +9,6 @@ const Top10 = () => {
 
   useEffect(() => {
     setStartingNUmber(Math.floor(Math.random() * 20))
-      console.log(".................")
   }, [selectedMovie])
 
   useEffect(() => {
