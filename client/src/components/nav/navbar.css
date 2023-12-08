@@ -1,46 +1,55 @@
-.nav{
-    position: fixed;
-    top: 0;
-    width: 100%;
-    padding: 15px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-size: 18px;
+
+.navbar{
+    color: aliceblue;
     background-color: black;
 }
-.nav a{
-    text-decoration: none;
-    color: aliceblue;
+
+.me-auto > *{
     margin: 10px;
     font-size: 18px;
+    color: aliceblue;
 }
 
-.nav a:hover{
-    color: yellow;
+.my-dropdown{
+    position: relative;
 }
-.dropdown-menu{
-    margin-top: 12px;
-}
-.dropdown-menu:hover .dropdown-items{
+
+.my-dropdown:hover .my-dropdown-menu{
     display: block;
+    position: absolute;
     display: flex;
-    flex-direction: column;
-    position: fixed;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 350px;
+    margin: auto;
 }
 
-.dropdown-items{
+.my-dropdown-menu{
     display: none;
     background-color: aliceblue;
+    padding: 15px 0px;
 }
-.dropdown-items a{
+
+.my-dropdown-menu > a{
+    margin: 10px;
     color: black;
 }
-.dropdown-items a:hover{
-    color: rgb(129, 129, 5);
+
+.my-dropdown-menu a:hover{
+    color: gold;
 }
-.bi{
-    font-size: 20px;
-    font: bold;
+
+.offcanvas{
+    background-color: black;
+}
+
+.offcanvas .bi-x-lg{
+    color: aliceblue;
+    font-size: 30px;
+    margin: 0 50%;
+}
+
+@media screen and (max-width: 600px) {
+
 }

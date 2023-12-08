@@ -2,4 +2,18 @@ body{
     text-align: center;
     background-color: black;
     color: aliceblue;
+    padding: 0;
+    margin: 0;
+}
+
+.movies-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
 }

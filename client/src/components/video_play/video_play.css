@@ -1,0 +1,48 @@
+.video-play-section{
+    margin-bottom: 40px;
+    width: 100%;
+    position: relative;
+}
+
+.video-play-container{
+    width: 100%;
+}
+
+.video-play-section .movie-description{
+    font-size: 20px;
+    text-align: center;
+    color: lightgoldenrodyellow;
+    font-weight: 550;
+    border: solid;
+    border-color: lightgoldenrodyellow;
+    border-width: 1.5px;
+    border-radius: 7px;
+    width: 98%;
+    margin: auto;
+}
+
+.video-play-section .movie-description h2{
+    margin: 2px;
+}
+
+.video-play-section .movie-details{
+    color: lightgoldenrodyellow;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    text-align: start;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+video{
+    object-fit: cover;
+}
+
+.video-play-section .movie-details .bi-star-fill{
+    color: orange;
+}
+
+.video-play-section .movie-details h1{
+    font-size: 80px;
+    font: bold;
+}

@@ -1,0 +1,93 @@
+#home{
+    text-align: start;
+}
+#home > *{
+    padding-top: 30px;
+}
+.landing{
+    width: 100%;
+    height: 700px;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.landing .details{
+    position: absolute;
+    left: 2%;
+    top: 30%;
+}
+.landing h1{
+    font-size: 70px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin: 20px 0px;
+}
+.landing .bi-star-fill{
+    color: yellow;
+}
+.landing p, .movie-of-the-year p{
+    font-size: 20px;
+}
+.home-movie-card{
+    width: 300px;
+    height: 450px;
+    margin: 15px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.home-movie-card img{
+    width: 100%;
+    height: 88%;
+}
+.home-movie-card .description{
+    display: none;
+}
+.home-movie-card:hover{
+    width: 290px;
+    height: 450px;
+}
+.home-movie-card:hover  .description{
+    display: block;
+}
+.a{
+    text-decoration: none;
+    color: inherit;
+}
+.play-btn{
+    padding: 2% 8%;
+    font-size: 20px;
+    background-color: red;
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+}
+
+.play-controls .bi-play-circle-fill{
+    color: red;
+    background: none;
+    font-size: 50px;
+    position: absolute;
+    top: 80%;
+    right: 0;
+    display: none;
+
+}
+
+.home-movie-card:hover .bi-play-circle-fill{
+    display: block;
+}
+
+.small-landing{
+    height: 600px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 600px) {
+    .landing h1{
+        font-size: 50px;
+    }
+}
