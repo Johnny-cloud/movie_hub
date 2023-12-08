@@ -27,7 +27,7 @@ const Navigation = () => {
           <Offcanvas.Header><i class="bi bi-x-lg" onClick={hideMenu}></i></Offcanvas.Header>
           <Offcanvas.Body>
             <Nav className="me-auto">
-              <Link to={'/'}>Home</Link>
+              <Link to={'/'} onClick={hideMenu}>Home</Link>
               <div className="my-dropdown">
               <Link>Genres</Link>
               <div className="my-dropdown-menu">

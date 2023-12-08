@@ -1,6 +1,5 @@
 import {useContext, useEffect, useState} from 'react'
 import './genre_display.css'
-import avatar from '../images/avatar.webp'
 import AppContext from '../AppContext'
 import HomeMovieCard from '../home/HomeMovieCard'
 import action from '../images/action.jpg'
@@ -16,6 +15,7 @@ const GenreDisplay = () => {
     const [url, setUrl] = useState()
 
     useEffect(() => {
+        window.scrollTo(0, 0)
         if(selectedGenre === "action"){
             setUrl(action)
         } else if(selectedGenre === "drama"){
@@ -32,6 +32,10 @@ const GenreDisplay = () => {
             setUrl(thriller)
         }
     }, [selectedGenre])
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
     if(selectedGenre)
     return (
