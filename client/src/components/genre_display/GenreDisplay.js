@@ -9,6 +9,7 @@ import comedy from '../images/comedy.jpg'
 import horror from '../images/horror.jpg'
 import romance from '../images/romance.jpg'
 import thriller from '../images/thriller.jpg'
+import Loading from '../animations/Loading'
 
 const GenreDisplay = () => {
     const {selectedGenre, allMovies} = useContext(AppContext)
@@ -37,22 +38,30 @@ const GenreDisplay = () => {
         window.scrollTo(0, 0)
     }, [])
 
-    if(selectedGenre)
-    return (
-    <div>
-        <div className='landing small-landing genre-landing' style={{backgroundImage: `url(${url})`}}>
-          <div className='details'>
-            <h1>{selectedGenre} movies</h1>
-          </div>
-        </div>
+    if(selectedGenre){
+        return (
+            <div>
+                <div className='landing small-landing genre-landing' style={{backgroundImage: `url(${url})`}}>
+                <div className='details'>
+                    <h1>{selectedGenre} movies</h1>
+                </div>
+                </div>
 
-        <div className="movies-section">
-            <div className="movies-container">
-                {allMovies.filter(movie => movie.category === selectedGenre).map(movie => <HomeMovieCard movie={movie} key={movie._id} />)}
-            </div>  
+                <div className="movies-section">
+                    <div className="movies-container">
+                        {allMovies.filter(movie => movie.category === selectedGenre).map(movie => <HomeMovieCard movie={movie} key={movie._id} />)}
+                    </div>  
+                    </div>
             </div>
-    </div>
-  )
+        ) 
+    } else{
+        return(
+            <div>
+                <Loading />
+            </div>
+        )
+    }
+   
 }
 
 export default GenreDisplay

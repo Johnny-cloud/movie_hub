@@ -1,6 +1,7 @@
 import HomeMovieCard from './HomeMovieCard'
 import { useContext, useEffect, useState } from 'react'
 import AppContext from '../AppContext'
+import Loading from '../animations/Loading'
 
 const Top10 = () => {
   const {allMovies, selectedMovie} = useContext(AppContext)
@@ -28,7 +29,13 @@ const Top10 = () => {
         </div>
       </div>
     )
-  }
+  }else{
+    return(
+        <div>
+            <Loading />
+        </div>
+    )
+}
 
 }
 

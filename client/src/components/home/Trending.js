@@ -1,6 +1,7 @@
 import {useContext} from 'react'
 import AppContext from '../AppContext'
 import HomeMovieCard from './HomeMovieCard'
+import Loading from '../animations/Loading'
 
 const Trending = () => {
     const {allMovies} = useContext(AppContext)
@@ -18,7 +19,7 @@ const Trending = () => {
     } else{
         return(
             <div>
-                <h3>Couldn't fetch</h3>
+                <Loading />
             </div>
         )
     }

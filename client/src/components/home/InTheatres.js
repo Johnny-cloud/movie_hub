@@ -1,6 +1,7 @@
 import HomeMovieCard from "./HomeMovieCard"
 import { useContext } from 'react'
 import AppContext from '../AppContext'
+import Loading from "../animations/Loading"
 
 const InTheatres = () => {
     const {allMovies} = useContext(AppContext)
@@ -18,7 +19,7 @@ const InTheatres = () => {
     } else{
         return(
             <div>
-                <h3>Couldn't fetch</h3>
+                <Loading />
             </div>
         )
     }

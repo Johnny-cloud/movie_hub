@@ -1,6 +1,7 @@
 import HomeMovieCard from './HomeMovieCard'
 import { useContext} from 'react'
 import AppContext from '../AppContext'
+import Loading from '../animations/Loading'
 
 const TopPicks = () => {
     const {allMovies} = useContext(AppContext)
@@ -14,6 +15,12 @@ const TopPicks = () => {
                 <div className="movies-container">
                     {allMovies.filter(movie => movie.release_year === 2023 && movie.rating >7 ).slice(0, 5).map(movie => <HomeMovieCard movie={movie} key={movie._id} />)}
                 </div>
+            </div>
+        )
+    } else{
+        return(
+            <div>
+                <Loading />
             </div>
         )
     }
