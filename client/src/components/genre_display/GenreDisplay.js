@@ -13,25 +13,27 @@ import Loading from '../animations/Loading'
 
 const GenreDisplay = () => {
     const {selectedGenre, allMovies} = useContext(AppContext)
-    const [url, setUrl] = useState()
+    let url =  ""
+
+    if(selectedGenre === "action"){
+        url = action
+    } else if(selectedGenre === "drama"){
+        url = drama
+    } else if(selectedGenre === "sci-fi"){
+        url = scifi
+    } else if(selectedGenre === "comedy"){
+        url = comedy
+    } else if(selectedGenre === "horror"){
+        url = horror
+    } else if(selectedGenre === "romance"){
+        url = romance
+    } else if(selectedGenre === "thriller"){
+        url = thriller
+    }
 
     useEffect(() => {
         window.scrollTo(0, 0)
-        if(selectedGenre === "action"){
-            setUrl(action)
-        } else if(selectedGenre === "drama"){
-            setUrl(drama)
-        } else if(selectedGenre === "sci-fi"){
-            setUrl(scifi)
-        } else if(selectedGenre === "comedy"){
-            setUrl(comedy)
-        } else if(selectedGenre === "horror"){
-            setUrl(horror)
-        } else if(selectedGenre === "romance"){
-            setUrl(romance)
-        } else if(selectedGenre === "thriller"){
-            setUrl(thriller)
-        }
+
     }, [selectedGenre])
 
     useEffect(() => {

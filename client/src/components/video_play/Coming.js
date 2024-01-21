@@ -24,7 +24,7 @@ const Coming = () => {
             <i class="bi bi-star-fill"></i></p>
             <p>Runtime: 280 mins</p>
             <p><span className='red-title'>Genres:</span> Sci-Fi</p>
-            <p><Link to={'/video-play'} onClick={handleClick} className='play-btn'>Watch Trailer <i class="bi bi-caret-right-fill"></i></Link></p>
+            <p><Link to={'/video-play'} onClick={handleClick} className='play-btn'>Watch<i class="bi bi-caret-right-fill"></i></Link></p>
           </div>
     </div>
   )
