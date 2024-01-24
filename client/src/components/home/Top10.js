@@ -6,14 +6,14 @@ import Loading from '../animations/Loading'
 const Top10 = () => {
   const {allMovies, selectedMovie} = useContext(AppContext)
   const [startingNumber, setStartingNUmber] = useState(0)
-  const [endingNumber, setEndingNumber] = useState(startingNumber + 5)
+  const [endingNumber, setEndingNumber] = useState(startingNumber + 6)
 
   useEffect(() => {
     setStartingNUmber(Math.floor(Math.random() * 20))
   }, [selectedMovie])
 
   useEffect(() => {
-    setEndingNumber(startingNumber + 5)
+    setEndingNumber(startingNumber + 6)
   }, [startingNumber])
 
   useEffect(() => {

@@ -4,12 +4,26 @@
     margin: auto;
 }
 
+.movies-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
 .movies-section{
-    width: 90%;
+    width: 80%;
     margin: auto;
     text-align: start;
+    margin: 50px auto;
 }
 
 .red-title{
     color: red;
+}
+
+@media screen and (max-width: 1200px) {
+    .movies-container{
+        justify-content: center;
+    }
 }

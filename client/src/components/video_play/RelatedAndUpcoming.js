@@ -7,8 +7,8 @@ const RelatedAndUpcoming = () => {
     const {allMovies, selectedMovie} = useContext(AppContext)
     const [startingNumber, setStartingNUmber] = useState(0)
     const [upStarting, setUpStarting] = useState(0)
-    const [endingNumber, setEndingNumber] = useState(startingNumber + 5)
-    const [upEndingNumber, setUpEndingNumber] = useState(startingNumber + 5)
+    const [endingNumber, setEndingNumber] = useState(startingNumber + 6)
+    const [upEndingNumber, setUpEndingNumber] = useState(startingNumber + 6)
     
 
     useEffect(() => {
@@ -17,8 +17,8 @@ const RelatedAndUpcoming = () => {
     }, [selectedMovie])
 
     useEffect(() => {
-        setEndingNumber(startingNumber + 5)
-        setUpEndingNumber(upStarting + 5)
+        setEndingNumber(startingNumber + 6)
+        setUpEndingNumber(upStarting + 6)
     }, [startingNumber, upStarting])
 
     if(allMovies && selectedMovie){

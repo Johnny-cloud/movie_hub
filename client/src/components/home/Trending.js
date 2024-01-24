@@ -11,7 +11,7 @@ const Trending = () => {
             <div className="movies-section">
                 <h2>Trending Movies</h2>
             <div className="movies-container">
-                {allMovies.filter(movie => movie.trending === true).slice(5, 10).map(movie => <HomeMovieCard movie={movie} key={movie._id} />)}
+                {allMovies.filter(movie => movie.trending === true).slice(5, 11).map(movie => <HomeMovieCard movie={movie} key={movie._id} />)}
             </div>  
             </div>
            

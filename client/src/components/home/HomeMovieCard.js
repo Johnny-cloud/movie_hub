@@ -15,8 +15,8 @@ const HomeMovieCard = ({movie}) => {
         <img src={movie.image} alt='movie'/>
         <div className="play-controls"><i class="bi bi-play-circle-fill"></i></div>
         <div className="description">
-          <h3>{movie.name}</h3> 
-          <h4>Runtime: {movie.runtime} mins</h4>  
+          <h5>{movie.name}</h5> 
+          <h6>Runtime: {movie.runtime} mins</h6>  
         </div>
       </div>
     </Link>
