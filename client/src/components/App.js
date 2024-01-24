@@ -11,8 +11,8 @@ const App = () => {
 
   const [selectedMovie, setSelectedMovie] = useState(null)
   const [allMovies, setAllMovies] = useState(null)
-  const apiRoute = "https://movie-hub-backend.vercel.app"
-  // const apiRoute = "http://localhost:8000"
+  // const apiRoute = "https://movie-hub-backend.vercel.app"
+  const apiRoute = "http://localhost:8000"
   const [selectedGenre, setSelectedGenre] = useState(null)
 
   const fetchMovies = async () => {

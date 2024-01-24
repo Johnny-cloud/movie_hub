@@ -21,7 +21,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    width: 350px;
+    width: 150px;
     margin: auto;
 }
 
@@ -32,7 +32,7 @@
 }
 
 .my-dropdown-menu > a{
-    margin: 10px;
+    margin: 15px;
     color: black;
 }
 
