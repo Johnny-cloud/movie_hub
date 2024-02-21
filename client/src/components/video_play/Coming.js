@@ -16,7 +16,7 @@ const Coming = () => {
       })
     }
   return (
-    <div className='movie-of-the-year landing' style={{backgroundImage: `url(${harleyJoker})`}}>
+    <div className='movie-of-the-year landing small-landing' style={{backgroundImage: `url(${harleyJoker})`}}>
          <div className='details'>
             <h1>Joker</h1>
             <p className='rating'><i class="bi bi-star-fill"></i><i class="bi bi-star-fill">

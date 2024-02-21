@@ -27,7 +27,7 @@ const RelatedAndUpcoming = () => {
                 <div className='movies-section'>
                             <h2>Related Movies</h2>
                             <div className='movies-container'>
-                                {allMovies.filter(movie => (movie.category === selectedMovie.category || movie.runtime > 120) && movie._id !== selectedMovie._id).slice(startingNumber, endingNumber).map(movie => <HomeMovieCard key={movie._id} movie={movie} /> )}
+                                {allMovies.filter(movie => (movie.category === selectedMovie.category || movie.runtime > 120)).slice(startingNumber, endingNumber).map(movie => <HomeMovieCard key={movie._id} movie={movie} /> )}
                             </div>
                         </div>
 
@@ -40,7 +40,7 @@ const RelatedAndUpcoming = () => {
                         <div className='movies-section'>
                             <h2>Upcoming Movies</h2>
                             <div className='movies-container'>
-                                {allMovies.filter(movie => movie.release_year === 2023 && movie._id !== selectedMovie._id).slice(upStarting, upEndingNumber).map(movie => <HomeMovieCard key={movie._id} movie={movie} /> )}
+                                {allMovies.filter(movie => movie.release_year === 2023).slice(upStarting, upEndingNumber).map(movie => <HomeMovieCard key={movie._id} movie={movie} /> )}
                             </div>
                         </div>
             </div>

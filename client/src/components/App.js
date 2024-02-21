@@ -6,27 +6,28 @@ import './app.css'
 import AppContext from './AppContext'
 import VideoPlay from './video_play/VideoPlay'
 import GenreDisplay from './genre_display/GenreDisplay'
+import movies from './assets/Constants'
 
 const App = () => {
 
   const [selectedMovie, setSelectedMovie] = useState(null)
-  const [allMovies, setAllMovies] = useState(null)
-  const apiRoute = "https://movie-hub-backend.vercel.app"
+  const [allMovies, setAllMovies] = useState(movies)
+  // const apiRoute = "https://movie-hub-backend.vercel.app"
   // const apiRoute = "http://localhost:8000"
   const [selectedGenre, setSelectedGenre] = useState(null)
 
-  const fetchMovies = async () => {
-    const response = await fetch(`${apiRoute}/movies`, {method: "GET", credentials: "include"})
+  // const fetchMovies = async () => {
+  //   const response = await fetch(`${apiRoute}/movies`, {method: "GET", credentials: "include"})
 
-    if(response.ok){
-      const movies = await response.json()
-      setAllMovies(movies)
-    }
-  }
+  //   if(response.ok){
+  //     const movies = await response.json()
+  //     setAllMovies(movies)
+  //   }
+  // }
 
-  useEffect(() => {
-    fetchMovies()
-  }, [])
+  // useEffect(() => {
+  //   fetchMovies()
+  // }, [])
 
   return (
     <div className='app'>
