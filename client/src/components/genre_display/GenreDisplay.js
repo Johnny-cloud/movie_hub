@@ -49,7 +49,7 @@ const GenreDisplay = () => {
                 </div>
                 </div>
 
-                <div className="movies-section">
+                <div className="main-section movies-section">
                     <div className="movies-container">
                         {allMovies.filter(movie => movie.category === selectedGenre).map(movie => <HomeMovieCard movie={movie} key={movie._id} />)}
                     </div>  

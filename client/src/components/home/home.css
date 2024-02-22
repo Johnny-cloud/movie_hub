@@ -31,8 +31,8 @@
     font-size: 20px;
 }
 .home-movie-card{
-    width: 230px;
-    height: 330px;
+    width: 250px;
+    height: 370px;
     margin: 15px;
     margin-bottom: 30px;
     position: relative;
@@ -40,6 +40,7 @@
 .home-movie-card img{
     width: 100%;
     height: 88%;
+    border-radius: 7px;
 }
 .home-movie-card .play-controls{
     display: none;
@@ -81,8 +82,8 @@
 
 .small-landing{
     height: 400px;
-    margin: auto;
     margin-bottom: 20px;
+    width: 95%;
 }
 
 .small-landing .details{

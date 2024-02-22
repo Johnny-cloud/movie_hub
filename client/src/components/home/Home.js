@@ -36,12 +36,14 @@ const Home = () => {
             <p><Link to={'/video-play'} onClick={handleClick} className='play-btn'>Watch <i class="bi bi-caret-right-fill"></i></Link></p>
           </div>
         </div>
-        <TopPicks />
-        <InTheatres />
-        <MovieOfTheYear />
-        <Top10 />
-        <BestEver />
-        <Trending />
+        <div className='main-section'>
+          <TopPicks />
+          <InTheatres />
+          <MovieOfTheYear />
+          <Top10 />
+          <BestEver />
+          <Trending />
+        </div>
     </div>
   )
 }

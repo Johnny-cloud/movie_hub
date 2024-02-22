@@ -23,7 +23,7 @@ const Top10 = () => {
   if(allMovies){
     return(
       <div className="movies-section">
-        <h2>Greatest Of All Times</h2>
+        <h4>Greatest Of All Times</h4>
         <div className="movies-container">
           {allMovies.filter(movie => movie.rating > 6.0 && movie.release_year !== 2023).slice(startingNumber,endingNumber).map(movie => <HomeMovieCard movie={movie} key={movie._id} />)}
         </div>

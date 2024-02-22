@@ -20,7 +20,7 @@ const Navigation = () => {
 
   return(
     <Navbar fixed="top" variant="dark" expand="lg" expanded={expanded}>
-    <Navbar.Brand>Movie Hub</Navbar.Brand>
+    <Navbar.Brand><h3>MOVIE HUB</h3></Navbar.Brand>
       <Container>
         <Navbar.Toggle onClick={() => setExpanded(expanded ? false : "expanded")}></Navbar.Toggle>
         <Navbar.Offcanvas>
