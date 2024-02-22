@@ -33,15 +33,18 @@ const App = () => {
   return (
     <div className='app'>
       <AppContext.Provider value={{selectedGenre, setSelectedGenre, selectedMovie, setSelectedMovie, allMovies}}>
+        
         <Navbar />
+        
         <div className='main-content'>
             <Routes>
                 <Route exact path='/' element={<Home />} />
                 <Route exact path='/video-play' element={<VideoPlay />} />
                 <Route exact path='/genre-display' element={<GenreDisplay />} />
             </Routes>
+            <Footer />
         </div>
-        <Footer />
+        
         </AppContext.Provider>
           
     </div>

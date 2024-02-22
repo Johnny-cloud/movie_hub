@@ -1,6 +1,14 @@
+.app{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    position: relative;
+}
+
+
 .main-content{
-    padding-top: 80px;
-    width: 100%;
+    width: 90%;
     margin: auto;
 }
 
@@ -25,7 +33,18 @@
     color: red;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
+    .app{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .main-content{
+        width: 100%;
+    }
+
     .movies-container{
         justify-content: center;
     }

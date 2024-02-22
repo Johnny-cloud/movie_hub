@@ -1,64 +1,70 @@
-
-.navbar{
-    color: aliceblue;
-    background-color: black;
+.navbar-container {
+    width: 10%;
 }
 
-.navbar h3{
+.navbar .bi, .offcanvas .bi{
+    color: red;
+    margin-right: 10px;
+    font-size: 20px;
+
+}
+
+.me-auto,.navbar .container, .navbar, .offcanvas {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.navbar {
+    color: aliceblue;
+    width: 180px;
+    position: sticky;
+    top: 0;
+}
+
+.navbar h3 {
     color: red;
     font-weight: bold;
 }
 
-.me-auto > *{
-    margin: 10px;
+
+.me-auto>* {
+    margin: 15px;
     font-size: 18px;
     color: aliceblue;
 }
 
-.me-auto a:hover, .me-auto a:focus{
+.me-auto a:hover,
+.me-auto a:focus {
     color: red;
 }
 
-.my-dropdown{
+.my-dropdown {
     position: relative;
 }
 
-.my-dropdown:hover .my-dropdown-menu{
-    display: block;
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    width: 200px;
-    margin: auto;
-}
 
-.my-dropdown-menu{
-    display: none;
-    background-color: aliceblue;
-    padding: 15px 0px;
-}
-
-.my-dropdown-menu > a{
-    margin: 15px;
-    color: black;
-}
-
-.my-dropdown-menu a:hover{
-    color: red;
-}
-
-.offcanvas{
+.offcanvas {
     background-color: black;
 }
 
-.offcanvas .bi-x-lg{
+.offcanvas .bi-x-lg {
     color: aliceblue;
     font-size: 30px;
     margin: 0 50%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+    .navbar-container {
+        width: 100%;
+    }
 
+    .navbar .container,
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }

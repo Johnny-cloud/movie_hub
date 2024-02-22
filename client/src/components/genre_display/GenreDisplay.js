@@ -28,10 +28,28 @@ const GenreDisplay = () => {
                 </div>
 
                 <div className="main-section movies-section">
-                    <div className="movies-container">
-                        {allMovies.filter(movie => movie.category === selectedGenre).map(movie => <HomeMovieCard movie={movie} key={movie._id} />)}
-                    </div>  
+                    <div>
+                        <h4>Recently added</h4>
+                        <div className="movies-container">
+                            {allMovies.filter(movie => movie.category === selectedGenre).slice(0, 6).map(movie => <HomeMovieCard movie={movie} key={movie._id} />)}
+                        </div>
                     </div>
+                     
+                    <div>
+                        <h4>Most liked</h4>
+                        <div className="movies-container">
+                            {allMovies.filter(movie => movie.category === selectedGenre).slice(6, 12).map(movie => <HomeMovieCard movie={movie} key={movie._id} />)}
+                        </div> 
+                    </div>
+                    
+                    <div>
+                        <h4>Most watched</h4>
+                        <div className="movies-container">
+                            {allMovies.filter(movie => movie.category === selectedGenre).slice(12, 18).map(movie => <HomeMovieCard movie={movie} key={movie._id} />)}
+                        </div> 
+                    </div>
+                    
+                </div>
             </div>
         ) 
     } else{
