@@ -1,35 +1,13 @@
-import {useContext, useEffect, useState} from 'react'
+import {useContext, useEffect} from 'react'
 import './genre_display.css'
 import AppContext from '../AppContext'
 import HomeMovieCard from '../home/HomeMovieCard'
-import action from '../images/action.jpg'
-import drama from '../images/drama.webp'
-import scifi from '../images/sci-fi.webp'
-import comedy from '../images/comedy.jpg'
-import horror from '../images/horror.jpg'
-import romance from '../images/romance.jpg'
-import thriller from '../images/thriller.jpg'
 import Loading from '../animations/Loading'
 
 const GenreDisplay = () => {
     const {selectedGenre, allMovies} = useContext(AppContext)
-    let url =  ""
+    let url =  "https://images.unsplash.com/photo-1505775561242-727b7fba20f0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 
-    if(selectedGenre === "action"){
-        url = action
-    } else if(selectedGenre === "drama"){
-        url = drama
-    } else if(selectedGenre === "sci-fi"){
-        url = scifi
-    } else if(selectedGenre === "comedy"){
-        url = comedy
-    } else if(selectedGenre === "horror"){
-        url = horror
-    } else if(selectedGenre === "romance"){
-        url = romance
-    } else if(selectedGenre === "thriller"){
-        url = thriller
-    }
 
     useEffect(() => {
         window.scrollTo(0, 0)
@@ -42,7 +20,7 @@ const GenreDisplay = () => {
 
     if(selectedGenre){
         return (
-            <div>
+            <div className='genre-display'>
                 <div className='landing small-landing genre-landing' style={{backgroundImage: `url(${url})`}}>
                 <div className='details'>
                     <h1>{selectedGenre} movies</h1>

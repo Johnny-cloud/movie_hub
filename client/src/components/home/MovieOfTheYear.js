@@ -8,7 +8,7 @@ const MovieOfTheYear = () => {
 
     const handleClick = () => {
       setSelectedMovie({
-        name: "Avatar",
+        name: "Captain Marvel",
         release_year: "2023",
         rating: 8.0,
         runtime: 280,
@@ -17,9 +17,9 @@ const MovieOfTheYear = () => {
     }
   return (
     <div className='movies-section'>
-        <div className='small-landing landing' style={{backgroundImage: `url(${avatarImage})`}}>
+        <div className='small-landing landing' style={{backgroundImage: `url(${'https://m.media-amazon.com/images/M/MV5BNmYwMzU2ODgtNzBiMS00OGNkLTlmZjUtMGViOTY4ZmZiNTZhXkEyXkFqcGdeQXVyNjg2NjQwMDQ@._V1_.jpg'})`}}>
             <div className='details'>
-                <h1>AVATAR</h1>
+                <h1>Captain Marvel</h1>
                 <p className='rating'><i class="bi bi-star-fill"></i><i class="bi bi-star-fill">
                 </i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 <i class="bi bi-star-fill"></i></p>

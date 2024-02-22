@@ -1,3 +1,11 @@
 .genre-landing{
-    height: 500px;
+    height: 300px;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 600px) {
+    .genre-landing{
+        height: 170px;
+    }
 }

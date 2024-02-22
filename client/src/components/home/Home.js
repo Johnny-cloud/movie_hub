@@ -15,24 +15,27 @@ const Home = () => {
 
   const handleClick = () => {
     setSelectedMovie({
-      name: "Captain Marvel",
+      name: "Avatar",
       release_year: "2023",
       rating: 8.0,
       runtime: 260,
       category: "sci-fi",
+      image: 'https://pbs.twimg.com/media/FeE3_w-XgAEe1Fu.jpg:large',
     })
   }
 
   return (
     <div id='home'>
-        <div className='landing' style={{backgroundImage: `url(${vision})`}}>
+        <div className='landing' style={{backgroundImage: `url(${'https://m.media-amazon.com/images/M/MV5BMTQ1ODE5NjYxMl5BMl5BanBnXkFtZTcwOTA3MTUzNA@@._V1_.jpg'})`}}>
+          <div className='overlay'></div>
           <div className='details'>
-            <h1>CAPTAIN MARVEL</h1>
+            <h1>Avatar</h1>
             <p className='rating'><i class="bi bi-star-fill"></i><i class="bi bi-star-fill">
             </i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
             <i class="bi bi-star-fill"></i></p>
             <p>Runtime: 260 mins</p>
             <p><span className='red-title'>Genres:</span> Sci-Fi</p>
+            <p>Enjoy the best exclusive movies and tv shows only on Movie Hub. Watch now cancel anytime.</p>
             <p><Link to={'/video-play'} onClick={handleClick} className='play-btn'>Watch <i class="bi bi-caret-right-fill"></i></Link></p>
           </div>
         </div>

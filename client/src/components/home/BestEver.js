@@ -18,7 +18,7 @@ const BestEver = () => {
 
   return (
     <div className='movies-section'>
-         <div className='small-landing landing' style={{backgroundImage: `url(${spiderman})`}}>
+         <div className='small-landing landing' style={{backgroundImage: `url(${'https://m.media-amazon.com/images/M/MV5BOTFlZTA4YjUtYzY3Zi00Mzc2LTllNzAtYjI2ZWNiMGZkZjE2XkEyXkFqcGdeQW1yb3NzZXI@._V1_.jpg'})`}}>
             <div className='details'>
                 <h1>SPIDERMAN</h1>
                 <p className='rating'><i class="bi bi-star-fill"></i><i class="bi bi-star-fill">

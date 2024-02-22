@@ -7,6 +7,7 @@ import AppContext from './AppContext'
 import VideoPlay from './video_play/VideoPlay'
 import GenreDisplay from './genre_display/GenreDisplay'
 import movies from './assets/Constants'
+import Footer from './footer/Footer'
 
 const App = () => {
 
@@ -40,6 +41,7 @@ const App = () => {
                 <Route exact path='/genre-display' element={<GenreDisplay />} />
             </Routes>
         </div>
+        <Footer />
         </AppContext.Provider>
           
     </div>
