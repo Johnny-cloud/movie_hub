@@ -9,7 +9,7 @@ const Trending = () => {
     if(allMovies){
         return (
             <div className="movies-section">
-                <h4>Trending Movies</h4>
+                <h5 className='red'>TRENDING MOVIES</h5>
             <div className="movies-container">
                 {allMovies.filter(movie => movie.trending === true).slice(5, 11).map(movie => <HomeMovieCard movie={movie} key={movie._id} />)}
             </div>  

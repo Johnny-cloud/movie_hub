@@ -9,7 +9,7 @@ const InTheatres = () => {
     if(allMovies){
         return (
             <div className="movies-section">
-                <h4>Showing in Theatres</h4>
+                <h5 className="red">SHOWING IN THEATRES</h5>
             <div className="movies-container">
                 {allMovies.filter(movie => movie.rating <= 5).slice(5, 11).map(movie => <HomeMovieCard movie={movie} key={movie._id} />)}
             </div>  

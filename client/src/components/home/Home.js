@@ -33,8 +33,8 @@ const Home = () => {
             <p className='rating'><i class="bi bi-star-fill"></i><i class="bi bi-star-fill">
             </i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
             <i class="bi bi-star-fill"></i></p>
-            <p>Runtime: 260 mins</p>
-            <p><span className='red-title'>Genres:</span> Sci-Fi</p>
+            <p><span className='red'>Runtime:</span> 260 mins</p>
+            <p><span className='red'>Genres:</span> Sci-Fi</p>
             <p>Enjoy the best exclusive movies and tv shows only on Movie Hub. Watch now cancel anytime.</p>
             <p><Link to={'/video-play'} onClick={handleClick} className='play-btn'>Watch <i class="bi bi-caret-right-fill"></i></Link></p>
           </div>

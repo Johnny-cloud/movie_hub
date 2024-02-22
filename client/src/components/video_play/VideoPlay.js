@@ -44,11 +44,11 @@ const VideoPlay = () => {
                     <p><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                     <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                     <i class="bi bi-star-fill"></i> <span className='rating'>{selectedMovie.rating}</span></p>
-                    <p><span className='red'>Release year:</span> {selectedMovie.release_year} </p>
-                    <p><span className='red'>Runtime:</span> {selectedMovie.runtime} mins</p>
-                    <p><span className='red'>Tags:</span> {selectedMovie.category}</p>
+                    <p><span className='red'>RELEASE YEAR:</span> {selectedMovie.release_year} </p>
+                    <p><span className='red'>RUNTIME:</span> {selectedMovie.runtime} mins</p>
+                    <p><span className='red'>TAGS:</span> {selectedMovie.category}</p>
                     <p>{selectedMovie.description}</p>
-                    <p><h3>Cast</h3></p>
+                    <p><h4>CAST</h4></p>
                     <p className='movies-container'>
                         {cast.map(member => {
                             return(

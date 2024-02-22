@@ -9,6 +9,12 @@
 
 }
 
+.navbar-toggler{
+    border: solid;
+    color: aliceblue;
+    border-color: aliceblue;
+}
+
 .me-auto,.navbar .container, .navbar, .offcanvas {
     display: flex;
     flex-direction: column;
@@ -40,9 +46,6 @@
     color: red;
 }
 
-.my-dropdown {
-    position: relative;
-}
 
 
 .offcanvas {
@@ -55,13 +58,17 @@
     margin: 0 50%;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
     .navbar-container {
+        width: 100%;
+        position: relative;
+    }
+
+    .navbar{
         width: 100%;
     }
 
-    .navbar .container,
-    .navbar {
+    .navbar .container, .navbar {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;

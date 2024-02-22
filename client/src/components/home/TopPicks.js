@@ -11,7 +11,7 @@ const TopPicks = () => {
     if(allMovies){
         return (
             <div className="movies-section">
-                <h4>Top Picks for 2023</h4>
+                <h5 className='red'>TOP PICKS FOR 2023</h5>
                 <div>
                     <div className='movies-container'>
                         {allMovies.filter(movie => movie.release_year === 2023 && movie.rating >7 ).slice(0, 6).map(movie => <HomeMovieCard movie={movie} key={movie._id} />)}
