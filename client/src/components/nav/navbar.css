@@ -4,11 +4,19 @@
     background-color: black;
 }
 
+.navbar h3{
+    color: red;
+    font-weight: bold;
+}
 
 .me-auto > *{
     margin: 10px;
     font-size: 18px;
     color: aliceblue;
+}
+
+.me-auto a:hover, .me-auto a:focus{
+    color: red;
 }
 
 .my-dropdown{
@@ -38,7 +46,7 @@
 }
 
 .my-dropdown-menu a:hover{
-    color: gold;
+    color: red;
 }
 
 .offcanvas{

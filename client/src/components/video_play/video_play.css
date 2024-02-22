@@ -26,3 +26,23 @@
 .video-play .selected-movie > *{
     margin: 20px;
 }
+
+.video-play .cast-member{
+    margin: 10px;
+}
+
+.video-play .cast-member .image-container{
+    width: 150px;
+    height: 150px;
+}
+
+.video-play .cast-member .image-container img, .video-play .cast-member .image-container{
+    border-radius: 50%;
+    border: solid;
+    border-color: red;
+    border-width: 2px;
+}
+
+.video-play .cast-member .image-container img{
+    filter: grayscale(5);
+}

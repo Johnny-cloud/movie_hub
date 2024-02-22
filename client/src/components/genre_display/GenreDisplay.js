@@ -23,7 +23,7 @@ const GenreDisplay = () => {
             <div className='genre-display'>
                 <div className='landing small-landing genre-landing' style={{backgroundImage: `url(${url})`}}>
                 <div className='details'>
-                    <h1>{selectedGenre} movies</h1>
+                    <h1 className='red'>{selectedGenre} movies</h1>
                 </div>
                 </div>
 
