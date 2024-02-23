@@ -1,5 +1,6 @@
 .navbar-container {
     width: 10%;
+    z-index: 1;
 }
 
 .navbar .bi, .offcanvas .bi{
@@ -58,7 +59,7 @@
     margin: 0 50%;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 900px) {
     .navbar-container {
         width: 100%;
         position: relative;
