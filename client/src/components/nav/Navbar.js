@@ -29,7 +29,7 @@ const Navigation = () => {
               <Offcanvas.Body>
                 <Nav className="me-auto">
                   <Link to={'/'} onClick={hideMenu}><i class="bi bi-house"></i> Home</Link>
-                    <h2>GENRES</h2>
+                    <span className="titles"><h5>Genres</h5></span>
                     <Link to={'/genre-display'} onClick={setGenre} id="action"><i class="bi bi-person-walking"></i> Action</Link>
                     <Link to={'/genre-display'} onClick={setGenre} id="comedy"><i class="bi bi-emoji-grin"></i> Comedy</Link>
                     <Link to={'/genre-display'} onClick={setGenre} id="thriller"><i class="bi bi-emoji-astonished"></i> Thriller</Link>
