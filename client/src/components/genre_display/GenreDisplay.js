@@ -1,4 +1,4 @@
-import React from 'react'
+import {useEffect} from 'react'
 import HomeMovieCard from '../home/HomeMovieCard'
 import Landing from '../landing/Landing'
 import {useContext} from 'react'
@@ -7,6 +7,10 @@ import './genre_display.css'
 
 const GenreDisplay = ({landingMovie}) => {
     const { allMovies} = useContext(AppContext)
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
     return (
         <div className='genre-display'>

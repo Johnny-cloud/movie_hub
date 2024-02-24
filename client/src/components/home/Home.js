@@ -6,6 +6,7 @@ import MovieOfTheYear from './MovieOfTheYear'
 import BestEver from './BestEver'
 import Trending from './Trending'
 import Landing from '../landing/Landing'
+import { useEffect } from 'react'
 
 const Home = () => {
 
@@ -18,6 +19,10 @@ const Home = () => {
     image: 'https://pbs.twimg.com/media/FeE3_w-XgAEe1Fu.jpg:large',
     horizontalImage: 'https://m.media-amazon.com/images/M/MV5BMTQ1ODE5NjYxMl5BMl5BanBnXkFtZTcwOTA3MTUzNA@@._V1_.jpg',
   }
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   return (
     <div id='home'>
