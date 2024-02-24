@@ -1,10 +1,6 @@
-import {useContext} from 'react'
-import AppContext from '../AppContext'
-import HomeMovieCard from '../home/HomeMovieCard'
-import Landing from '../landing/Landing'
+import GenreDisplay from "../genre_display/GenreDisplay"
 
 const Drama = () => {
-    const { allMovies} = useContext(AppContext)
 
     const landingMovie = {
         name: "Good Girls",
@@ -13,37 +9,11 @@ const Drama = () => {
         description: "",
         runtime: 150,
         rating: 6.7,
-        category: "Drama"
+        category: "drama"
     }
 
   return (
-    <div className='genre-display'>
-    <Landing movieLanding={landingMovie} />
-
-    <div className="main-section movies-section">
-        <div>
-            <h5 className='red'>RECENTLY ADDED</h5>
-            <div className="movies-container">
-                {allMovies.filter(movie => movie.category === "drama").slice(0, 6).map(movie => <HomeMovieCard movie={movie} key={movie._id} />)}
-            </div>
-        </div>
-         
-        <div>
-            <h5 className='red'>MOST LIKED</h5>
-            <div className="movies-container">
-                {allMovies.filter(movie => movie.category === "drama").slice(6, 12).map(movie => <HomeMovieCard movie={movie} key={movie._id} />)}
-            </div> 
-        </div>
-        
-        <div>
-            <h5 className='red'>MOST WATCHED</h5>
-            <div className="movies-container">
-                {allMovies.filter(movie => movie.category === "drama").slice(12, 18).map(movie => <HomeMovieCard movie={movie} key={movie._id} />)}
-            </div> 
-        </div>
-        
-    </div>
-</div>
+    <GenreDisplay landingMovie={landingMovie} />
   )
 }
 
