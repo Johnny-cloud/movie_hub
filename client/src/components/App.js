@@ -8,6 +8,13 @@ import VideoPlay from './video_play/VideoPlay'
 import GenreDisplay from './genre_display/GenreDisplay'
 import movies from './assets/Constants'
 import Footer from './footer/Footer'
+import Action from './action/Action'
+import Comedy from './comedy/Comedy'
+import Drama from './drama/Drama'
+import Horror from './horror/Horror'
+import Romance from './romance/Romance'
+import Scifi from './scifi/Scifi'
+import Thriller from './thriller/Thriller'
 
 const App = () => {
 
@@ -39,6 +46,13 @@ const App = () => {
         <div className='main-content'>
             <Routes>
                 <Route exact path='/' element={<Home />} />
+                <Route exact path='/action' element={<Action />} />
+                <Route exact path='/comedy' element={<Comedy />} />
+                <Route exact path='/drama' element={<Drama />} />
+                <Route exact path='/horror' element={<Horror />} />
+                <Route exact path='/romance' element={<Romance />} />
+                <Route exact path='/scifi' element={<Scifi />} />
+                <Route exact path='/thriller' element={<Thriller />} />
                 <Route exact path='/video-play' element={<VideoPlay />} />
                 <Route exact path='/genre-display' element={<GenreDisplay />} />
             </Routes>

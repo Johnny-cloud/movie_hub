@@ -30,13 +30,13 @@ const Navigation = () => {
                 <Nav className="me-auto">
                   <Link to={'/'} onClick={hideMenu}><i class="bi bi-house"></i> Home</Link>
                     <span className="titles"><h5>Genres</h5></span>
-                    <Link to={'/genre-display'} onClick={setGenre} id="action"><i class="bi bi-person-walking"></i> Action</Link>
-                    <Link to={'/genre-display'} onClick={setGenre} id="comedy"><i class="bi bi-emoji-grin"></i> Comedy</Link>
-                    <Link to={'/genre-display'} onClick={setGenre} id="thriller"><i class="bi bi-emoji-astonished"></i> Thriller</Link>
-                    <Link to={'/genre-display'} onClick={setGenre} id="horror"><i class="bi bi-emoji-dizzy"></i> Horror</Link>
-                    <Link to={'/genre-display'} onClick={setGenre} id="sci-fi"><i class="bi bi-motherboard"></i> Sci-Fi</Link>
-                    <Link to={'/genre-display'} onClick={setGenre} id="romance"><i class="bi bi-heart"></i> Romance</Link>
-                    <Link to={'/genre-display'} onClick={setGenre} id="drama"><i class="bi bi-emoji-surprise"></i> Drama</Link>
+                    <Link to={'/action'} onClick={setGenre} id="action"><i class="bi bi-person-walking"></i> Action</Link>
+                    <Link to={'/comedy'} onClick={setGenre} id="comedy"><i class="bi bi-emoji-grin"></i> Comedy</Link>
+                    <Link to={'/thriller'} onClick={setGenre} id="thriller"><i class="bi bi-emoji-astonished"></i> Thriller</Link>
+                    <Link to={'/horror'} onClick={setGenre} id="horror"><i class="bi bi-emoji-dizzy"></i> Horror</Link>
+                    <Link to={'/scifi'} onClick={setGenre} id="sci-fi"><i class="bi bi-motherboard"></i> Sci-Fi</Link>
+                    <Link to={'/romance'} onClick={setGenre} id="romance"><i class="bi bi-heart"></i> Romance</Link>
+                    <Link to={'/drama'} onClick={setGenre} id="drama"><i class="bi bi-emoji-surprise"></i> Drama</Link>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
