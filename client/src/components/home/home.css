@@ -54,28 +54,3 @@
 .home-movie-card:hover .bi-play-circle-fill{
     display: block;
 }
-
-.small-landing{
-    height: 400px;
-    margin-bottom: 20px;
-    width: 95%;
-}
-
-.small-landing .details{
-    top: 10%;
-}
-
-@media screen and (max-width: 600px) {
-
-    .small-landing{
-        height: 250px;
-    }
-
-    .small-landing h1{
-        font-size: 30px;
-    }
-
-    .small-landing .details{
-        top: 0;
-    }
-}
