@@ -9,7 +9,6 @@
 
 .main-content{
     width: 90%;
-    height: 100%;
 }
 
 .movies-container{
@@ -55,8 +54,6 @@
 
     .main-content{
         width: 100%;
-        position: relative;
-        padding-top: 80px;
     }
 
     .movies-container{

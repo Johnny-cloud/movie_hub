@@ -1,5 +1,8 @@
 .navbar-container {
     width: 10%;
+    height: 100%;
+    position: sticky;
+    top: 0;
     z-index: 1;
 }
 
@@ -16,7 +19,10 @@
     border-color: aliceblue;
 }
 
-.me-auto,.navbar .container, .navbar, .offcanvas {
+.me-auto,
+.navbar .container, 
+.navbar, 
+.offcanvas {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -26,8 +32,6 @@
 .navbar {
     color: aliceblue;
     width: 200px;
-    position: sticky;
-    top: 0;
 }
 
 .navbar h3 {
@@ -63,19 +67,7 @@
 @media screen and (max-width: 900px) {
     .navbar-container {
         width: 100%;
-        position: fixed;
-        top: 0;
         background-color: black;
     }
 
-    .navbar .titles{
-        display: none;
-    }
-
-    .navbar .container, .navbar {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
 }
