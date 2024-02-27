@@ -63,7 +63,9 @@
 @media screen and (max-width: 900px) {
     .navbar-container {
         width: 100%;
-        position: relative;
+        position: fixed;
+        top: 0;
+        background-color: black;
     }
 
     .navbar .titles{
