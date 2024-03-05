@@ -16,7 +16,7 @@ const Home = () => {
     rating: 8.0,
     runtime: 260,
     category: "sci-fi",
-    image: 'https://pbs.twimg.com/media/FeE3_w-XgAEe1Fu.jpg:large',
+    image: 'https://m.media-amazon.com/images/M/MV5BYzRjOTdiZGQtZDJhNC00OTk4LTk1YjAtYTM0NGFjM2MxYzIzXkEyXkFqcGdeQXVyODk2ODI3MTU@._V1_.jpg',
     horizontalImage: 'https://m.media-amazon.com/images/M/MV5BMTQ1ODE5NjYxMl5BMl5BanBnXkFtZTcwOTA3MTUzNA@@._V1_.jpg',
   }
 

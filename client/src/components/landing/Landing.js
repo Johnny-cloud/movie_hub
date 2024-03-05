@@ -20,7 +20,7 @@ const Landing = ({movieLanding}) => {
             <i class="bi bi-star-fill"></i> {movieLanding.rating}</p>
             <p><span className='red'>Runtime:</span> {movieLanding.runtime} mins</p>
             <p><span className='red'>Genres:</span> {movieLanding.category}</p>
-            <p>Enjoy the best exclusive movies and tv shows only on Movie Hub. Watch now cancel anytime.</p>
+            <p>Enjoy the best exclusive movies and tv shows only on Movie Hub.</p>
             <p><Link to={'/video-play'} onClick={handleClick} className='play-btn'>Watch <i class="bi bi-caret-right-fill"></i></Link></p>
           </div>
         </div>
