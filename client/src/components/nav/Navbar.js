@@ -29,14 +29,15 @@ const Navigation = () => {
               <Offcanvas.Body>
                 <Nav className="me-auto">
                   <Link to={'/'} onClick={hideMenu}><i class="bi bi-house"></i> Home</Link>
-                    <span className="titles"><h5>Genres</h5></span>
                     <Link to={'/action'} onClick={setGenre} id="action"><i class="bi bi-person-walking"></i> Action</Link>
                     <Link to={'/comedy'} onClick={setGenre} id="comedy"><i class="bi bi-emoji-grin"></i> Comedy</Link>
-                    <Link to={'/thriller'} onClick={setGenre} id="thriller"><i class="bi bi-emoji-astonished"></i> Thriller</Link>
+                    <Link to={'/thriller'} onClick={setGenre} id="thriller"><i class="bi bi-film"></i> Thriller</Link>
                     <Link to={'/horror'} onClick={setGenre} id="horror"><i class="bi bi-emoji-dizzy"></i> Horror</Link>
                     <Link to={'/scifi'} onClick={setGenre} id="sci-fi"><i class="bi bi-motherboard"></i> Sci-Fi</Link>
                     <Link to={'/romance'} onClick={setGenre} id="romance"><i class="bi bi-heart"></i> Romance</Link>
                     <Link to={'/drama'} onClick={setGenre} id="drama"><i class="bi bi-emoji-surprise"></i> Drama</Link>
+                    <Link to={'/new'} onClick={setGenre} id="drama"><i class="bi bi-fire"></i> New</Link>
+                    <Link to={'/popular'} onClick={setGenre} id="drama"><i class="bi bi-hand-thumbs-up"></i> Popular</Link>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>

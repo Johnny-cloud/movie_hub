@@ -7,7 +7,6 @@
 }
 
 .navbar .bi, .offcanvas .bi{
-    color: red;
     margin-right: 10px;
     font-size: 20px;
 
@@ -45,11 +44,15 @@
     font-size: 18px;
     color: aliceblue;
     margin-bottom: 5px;
+    padding: 3px 12px;
+    text-align: justify;
+    width: fit-content;
 }
 
 .me-auto a:hover,
 .me-auto a:focus {
-    color: red;
+    background-color: red;
+    border-radius: 5px;
 }
 
 

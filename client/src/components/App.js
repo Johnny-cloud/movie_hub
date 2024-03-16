@@ -15,27 +15,16 @@ import Horror from './horror/Horror'
 import Romance from './romance/Romance'
 import Scifi from './scifi/Scifi'
 import Thriller from './thriller/Thriller'
+import NewMovies from './new_movies/NewMovies'
+import PopularMovies from './popular/PopularMovies'
 
 const App = () => {
 
   const [selectedMovie, setSelectedMovie] = useState(null)
   const [allMovies, setAllMovies] = useState(movies)
-  // const apiRoute = "https://movie-hub-backend.vercel.app"
-  // const apiRoute = "http://localhost:8000"
   const [selectedGenre, setSelectedGenre] = useState(null)
 
-  // const fetchMovies = async () => {
-  //   const response = await fetch(`${apiRoute}/movies`, {method: "GET", credentials: "include"})
-
-  //   if(response.ok){
-  //     const movies = await response.json()
-  //     setAllMovies(movies)
-  //   }
-  // }
-
-  // useEffect(() => {
-  //   fetchMovies()
-  // }, [])
+  
 
   return (
     <div className='app'>
@@ -55,6 +44,8 @@ const App = () => {
                 <Route exact path='/thriller' element={<Thriller />} />
                 <Route exact path='/video-play' element={<VideoPlay />} />
                 <Route exact path='/genre-display' element={<GenreDisplay />} />
+                <Route exact path='/new' element={<NewMovies />} />
+                <Route exact path='/popular' element={<PopularMovies />} />
             </Routes>
             <Footer />
         </div>
